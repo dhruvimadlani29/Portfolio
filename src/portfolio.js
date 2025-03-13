@@ -22,7 +22,7 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Dhruvi Madlani",
-  logo_name: "DhruviMadlani",
+  logo_name: "DM",
   // nickname: "dhruvi",
   subTitle:
     "I am an experienced full-stack developer with 4 years of expertise in building scalable and responsive web applications. Skilled in modern technologies like React (for dynamic UI/UX components) and Node.js (for efficient backend architecture). ",
@@ -66,7 +66,7 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fab fa-google", // OR "fas fa-envelope"
     backgroundColor: "#D14836",
   },
-  
+
   {
     name: "X-Twitter",
     link: "https://x.com/dhruvi_madlani",
@@ -84,298 +84,296 @@ const socialMediaLinks = [
     link: "https://medium.com/@@dhruvimadlani2902", // Replace with your actual Medium profile URL
     fontAwesomeIcon: "fa-medium", // FontAwesome icon for Medium (you can check the icons here: https://fontawesome.com/icons/medium?f=brands)
     backgroundColor: "#00AB6C", // The color associated with Medium (Reference: https://simpleicons.org/?q=medium)
-}
+  },
 ];
 
 const skills = {
   data: [
-  //   {
-  //     title: "Full Stack Development",
-  //     fileName: "FullStackImg",
-  //     skills: [
-  //       "⚡ Building scalable and responsive web applications using React.js, Redux, and TypeScript",
-  //       "⚡ UI/UX design implementation for dynamic and interactive web interfaces",
-  //       "⚡ Performance optimization, improving web app efficiency from 7% to 85% using lazy loading, code splitting, and efficient state management",
-  //       "⚡ Experience with real-time applications using Firestore for notifications and Google Maps for location services",
-  //       "⚡ Integration of payment gateways including PayPal, Razorpay, Google Pay, and UPI services",
-  //       "⚡ Backend development with Node.js, Express.js, and databases like MySQL & MongoDB",
-  //       "⚡ Cloud services experience with AWS and Azure, and CI/CD setup using Jenkins and Git",
-  //   ],    
-  //   softwareSkills: [
-  //     {
-  //         skillName: "React.js",
-  //         fontAwesomeClassname: "logos-react",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //         },
-  //     },
-  //     {
-  //         skillName: "Redux",
-  //         fontAwesomeClassname: "simple-icons:redux",
-  //         style: {
-  //             backgroundColor: "white",
-  //             color: "#764ABC",
-  //         },
-  //     },
-  //     {
-  //         skillName: "JavaScript",
-  //         fontAwesomeClassname: "logos-javascript",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //             color: "#F7DF1E",
-  //         },
-  //     },
-  //     {
-  //         skillName: "TypeScript",
-  //         fontAwesomeClassname: "logos-typescript",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //             color: "#3178C6",
-  //         },
-  //     },
-  //     {
-  //         skillName: "Node.js",
-  //         fontAwesomeClassname: "logos-nodejs",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //         },
-  //     },
-  //     {
-  //         skillName: "Express.js",
-  //         fontAwesomeClassname: "simple-icons:express",
-  //         style: {
-  //             backgroundColor: "black",
-  //             color: "white",
-  //         },
-  //     },
-  //     {
-  //         skillName: "MongoDB",
-  //         fontAwesomeClassname: "logos-mongodb",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //         },
-  //     },
-  //     {
-  //         skillName: "MySQL",
-  //         fontAwesomeClassname: "logos-mysql",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //         },
-  //     },
-  //     {
-  //         skillName: "AWS",
-  //         fontAwesomeClassname: "logos-aws",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //         },
-  //     },
-  //     {
-  //         skillName: "Azure",
-  //         fontAwesomeClassname: "logos-microsoft-azure",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //         },
-  //     },
-  //     {
-  //         skillName: "Git",
-  //         fontAwesomeClassname: "logos-git",
-  //         style: {
-  //             backgroundColor: "transparent",
-  //         },
-  //     },
-  // ],
-  
-  //   },
-  {
-    title: "Full Stack Development",
-    fileName: "javascript",
-    skills: [
-      "⚡ Building responsive and scalable web applications using React.js, Redux, and TypeScript",
-      "⚡ Developing dynamic and interactive UI/UX with HTML, CSS, Bootstrap, and Ant Design",
-      "⚡ Managing state efficiently in React applications using Redux and Context API",
-      "⚡ Creating and optimizing backend services using Node.js, Express.js, and MySQL/MongoDB",
-      "⚡ Implementing authentication and user management with JWT, Firebase Auth, and OAuth",
-      "⚡ Enhancing performance with lazy loading, code splitting, and server-side optimizations",
-      "⚡ Deploying and managing applications on AWS, Azure, and Firebase",
-      "⚡ Working with DevOps tools like Jenkins and Git for CI/CD automation",
-    ],
-    softwareSkills: [
-      {
-        skillName: "HTML5",
-        fontAwesomeClassname: "simple-icons:html5",
-        style: { color: "#E34F26" },
-      },
-      {
-        skillName: "CSS3",
-        fontAwesomeClassname: "fa-css3",
-        style: { color: "#1572B6" },
-      },
-      {
-        skillName: "JavaScript",
-        fontAwesomeClassname: "simple-icons:javascript",
-        style: { backgroundColor: "#000000", color: "#F7DF1E" },
-      },
-      {
-        skillName: "TypeScript",
-        fontAwesomeClassname: "simple-icons:typescript",
-        style: { color: "#3178C6" },
-      },
-      {
-        skillName: "ReactJS",
-        fontAwesomeClassname: "simple-icons:react",
-        style: { color: "#61DAFB" },
-      },
-      {
-        skillName: "Redux",
-        fontAwesomeClassname: "simple-icons:redux",
-        style: { color: "#764ABC" },
-      },
-      {
-        skillName: "NodeJS",
-        fontAwesomeClassname: "logos:nodejs", // Updated Node.js icon
-        style: { color: "#8CC84B" },
-      },
-      {
-        skillName: "Express.js",
-        fontAwesomeClassname: "simple-icons:express",
-        style: { color: "#000000" },
-      },
-      {
-        skillName: "MongoDB",
-        fontAwesomeClassname: "simple-icons:mongodb",
-        style: { color: "#47A248" },
-      },
-      {
-        skillName: "MySQL",
-        fontAwesomeClassname: "simple-icons:mysql",
-        style: { color: "#4479A1" },
-      },
-      {
-        skillName: "Firebase",
-        fontAwesomeClassname: "simple-icons:firebase",
-        style: { color: "#FFCA28" },
-      },
-      {
-        skillName: "Git",
-        fontAwesomeClassname: "simple-icons:git",
-        style: { color: "#F05032" },
-      },
-    ],
-  },
-  
-  {
-    title: "Cloud Infra-Architecture",
-    fileName: "CloudInfra",
-    skills: [
-      "⚡ Experience working with cloud platforms like AWS and Azure",
-      "⚡ Hosting and maintaining web applications on cloud servers with database integration",
-      "⚡ Deploying and managing applications using AWS EC2, Azure App Services, and Firebase",
-      "⚡ Implementing CI/CD pipelines with Jenkins, GitHub Actions, and Azure DevOps",
-      "⚡ Managing database services using MySQL, MongoDB, and Firestore on cloud platforms",
-    ],
-    softwareSkills: [
-      {
-        skillName: "AWS",
-        fontAwesomeClassname: "simple-icons:amazonaws",
-        style: { color: "#FF9900" },
-      },
-      {
-        skillName: "Azure",
-        fontAwesomeClassname: "simple-icons:microsoftazure",
-        style: { color: "#0089D6" },
-      },
-      {
-        skillName: "Firebase",
-        fontAwesomeClassname: "simple-icons:firebase",
-        style: { color: "#FFCA28" },
-      },
-      {
-        skillName: "Jenkins",
-        fontAwesomeClassname: "simple-icons:jenkins",
-        style: { color: "#D24939" },
-      },
-      {
-        skillName: "GitHub Actions",
-        fontAwesomeClassname: "simple-icons:githubactions",
-        style: { color: "#2088FF" },
-      },
-      {
-        skillName: "MySQL",
-        fontAwesomeClassname: "simple-icons:mysql",
-        style: { color: "#4479A1" },
-      },
-      {
-        skillName: "MongoDB",
-        fontAwesomeClassname: "simple-icons:mongodb",
-        style: { color: "#47A248" },
-      },
-    ],
-  },
-  {
-    title: "UI/UX Design",
-    fileName: "DesignImg",
-    skills: [
-      "⚡ Designing highly responsive and interactive user interfaces for web applications",
-      "⚡ Implementing UI/UX designs using React.js, Redux, HTML, CSS, and Bootstrap",
-      "⚡ Creating wireframes, prototypes, and design mockups for web applications",
-      "⚡ Optimizing user experience by ensuring seamless navigation and accessibility",
-      "⚡ Ensuring cross-browser compatibility and mobile responsiveness",
-    ],
-    softwareSkills: [
-      {
-        skillName: "Figma",
-        fontAwesomeClassname: "simple-icons:figma",
-        style: { color: "#F24E1E" },
-      },
-      {
-        skillName: "Adobe XD",
-        fontAwesomeClassname: "simple-icons:adobexd",
-        style: { color: "#FF2BC2" },
-      },
-      {
-        skillName: "Bootstrap",
-        fontAwesomeClassname: "simple-icons:bootstrap",
-        style: { color: "#7952B3" },
-      },
-      {
-        skillName: "Ant Design",
-        fontAwesomeClassname: "simple-icons:antdesign",
-        style: { color: "#0170FE" },
-      },
-      {
-        skillName: "UIKit",
-        fontAwesomeClassname: "simple-icons:uikit",
-        style: { color: "#0058A3" },
-      },
-      {
-        skillName: "Sketch",
-        fontAwesomeClassname: "simple-icons:sketch",
-        style: { color: "#F7B500" },
-      },
-      {
-        skillName: "InVision",
-        fontAwesomeClassname: "simple-icons:invision",
-        style: { color: "#FF5B5B" },
-      },
-      {
-        skillName: "Zeplin",
-        fontAwesomeClassname: "simple-icons:zeplin",
-        style: { color: "#00B0A0" },
-      },
-      {
-        skillName: "Marvel App",
-        fontAwesomeClassname: "simple-icons:marvel",
-        style: { color: "#F3A4A3" },
-      },
-      {
-        skillName: "Balsamiq",
-        fontAwesomeClassname: "simple-icons:balsamiq",
-        style: { color: "#E7A400" },
-      },
-    ],
-  }
-  
-  
+    //   {
+    //     title: "Full Stack Development",
+    //     fileName: "FullStackImg",
+    //     skills: [
+    //       "⚡ Building scalable and responsive web applications using React.js, Redux, and TypeScript",
+    //       "⚡ UI/UX design implementation for dynamic and interactive web interfaces",
+    //       "⚡ Performance optimization, improving web app efficiency from 7% to 85% using lazy loading, code splitting, and efficient state management",
+    //       "⚡ Experience with real-time applications using Firestore for notifications and Google Maps for location services",
+    //       "⚡ Integration of payment gateways including PayPal, Razorpay, Google Pay, and UPI services",
+    //       "⚡ Backend development with Node.js, Express.js, and databases like MySQL & MongoDB",
+    //       "⚡ Cloud services experience with AWS and Azure, and CI/CD setup using Jenkins and Git",
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //         skillName: "React.js",
+    //         fontAwesomeClassname: "logos-react",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //         },
+    //     },
+    //     {
+    //         skillName: "Redux",
+    //         fontAwesomeClassname: "simple-icons:redux",
+    //         style: {
+    //             backgroundColor: "white",
+    //             color: "#764ABC",
+    //         },
+    //     },
+    //     {
+    //         skillName: "JavaScript",
+    //         fontAwesomeClassname: "logos-javascript",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //             color: "#F7DF1E",
+    //         },
+    //     },
+    //     {
+    //         skillName: "TypeScript",
+    //         fontAwesomeClassname: "logos-typescript",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //             color: "#3178C6",
+    //         },
+    //     },
+    //     {
+    //         skillName: "Node.js",
+    //         fontAwesomeClassname: "logos-nodejs",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //         },
+    //     },
+    //     {
+    //         skillName: "Express.js",
+    //         fontAwesomeClassname: "simple-icons:express",
+    //         style: {
+    //             backgroundColor: "black",
+    //             color: "white",
+    //         },
+    //     },
+    //     {
+    //         skillName: "MongoDB",
+    //         fontAwesomeClassname: "logos-mongodb",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //         },
+    //     },
+    //     {
+    //         skillName: "MySQL",
+    //         fontAwesomeClassname: "logos-mysql",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //         },
+    //     },
+    //     {
+    //         skillName: "AWS",
+    //         fontAwesomeClassname: "logos-aws",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //         },
+    //     },
+    //     {
+    //         skillName: "Azure",
+    //         fontAwesomeClassname: "logos-microsoft-azure",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //         },
+    //     },
+    //     {
+    //         skillName: "Git",
+    //         fontAwesomeClassname: "logos-git",
+    //         style: {
+    //             backgroundColor: "transparent",
+    //         },
+    //     },
+    // ],
+
+    //   },
+    {
+      title: "Full Stack Development",
+      fileName: "javascript",
+      skills: [
+        "⚡ Building responsive and scalable web applications using React.js, Redux, and TypeScript",
+        "⚡ Developing dynamic and interactive UI/UX with HTML, CSS, Bootstrap, and Ant Design",
+        "⚡ Managing state efficiently in React applications using Redux and Context API",
+        "⚡ Creating and optimizing backend services using Node.js, Express.js, and MySQL/MongoDB",
+        "⚡ Implementing authentication and user management with JWT, Firebase Auth, and OAuth",
+        "⚡ Enhancing performance with lazy loading, code splitting, and server-side optimizations",
+        "⚡ Deploying and managing applications on AWS, Azure, and Firebase",
+        "⚡ Working with DevOps tools like Jenkins and Git for CI/CD automation",
+      ],
+      softwareSkills: [
+        {
+          skillName: "HTML5",
+          fontAwesomeClassname: "simple-icons:html5",
+          style: { color: "#E34F26" },
+        },
+        {
+          skillName: "CSS3",
+          fontAwesomeClassname: "fa-css3",
+          style: { color: "#1572B6" },
+        },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          style: { backgroundColor: "#000000", color: "#F7DF1E" },
+        },
+        {
+          skillName: "TypeScript",
+          fontAwesomeClassname: "simple-icons:typescript",
+          style: { color: "#3178C6" },
+        },
+        {
+          skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: { color: "#61DAFB" },
+        },
+        {
+          skillName: "Redux",
+          fontAwesomeClassname: "simple-icons:redux",
+          style: { color: "#764ABC" },
+        },
+        {
+          skillName: "NodeJS",
+          fontAwesomeClassname: "logos:nodejs", // Updated Node.js icon
+          style: { color: "#8CC84B" },
+        },
+        {
+          skillName: "Express.js",
+          fontAwesomeClassname: "simple-icons:express",
+          style: { color: "#000000" },
+        },
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: { color: "#47A248" },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: { color: "#4479A1" },
+        },
+        {
+          skillName: "Firebase",
+          fontAwesomeClassname: "simple-icons:firebase",
+          style: { color: "#FFCA28" },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
+          style: { color: "#F05032" },
+        },
+      ],
+    },
+
+    {
+      title: "Cloud Infra-Architecture",
+      fileName: "CloudInfra",
+      skills: [
+        "⚡ Experience working with cloud platforms like AWS and Azure",
+        "⚡ Hosting and maintaining web applications on cloud servers with database integration",
+        "⚡ Deploying and managing applications using AWS EC2, Azure App Services, and Firebase",
+        "⚡ Implementing CI/CD pipelines with Jenkins, GitHub Actions, and Azure DevOps",
+        "⚡ Managing database services using MySQL, MongoDB, and Firestore on cloud platforms",
+      ],
+      softwareSkills: [
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: { color: "#FF9900" },
+        },
+        {
+          skillName: "Azure",
+          fontAwesomeClassname: "simple-icons:microsoftazure",
+          style: { color: "#0089D6" },
+        },
+        {
+          skillName: "Firebase",
+          fontAwesomeClassname: "simple-icons:firebase",
+          style: { color: "#FFCA28" },
+        },
+        {
+          skillName: "Jenkins",
+          fontAwesomeClassname: "simple-icons:jenkins",
+          style: { color: "#D24939" },
+        },
+        {
+          skillName: "GitHub Actions",
+          fontAwesomeClassname: "simple-icons:githubactions",
+          style: { color: "#2088FF" },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: { color: "#4479A1" },
+        },
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: { color: "#47A248" },
+        },
+      ],
+    },
+    {
+      title: "UI/UX Design",
+      fileName: "DesignImg",
+      skills: [
+        "⚡ Designing highly responsive and interactive user interfaces for web applications",
+        "⚡ Implementing UI/UX designs using React.js, Redux, HTML, CSS, and Bootstrap",
+        "⚡ Creating wireframes, prototypes, and design mockups for web applications",
+        "⚡ Optimizing user experience by ensuring seamless navigation and accessibility",
+        "⚡ Ensuring cross-browser compatibility and mobile responsiveness",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Figma",
+          fontAwesomeClassname: "simple-icons:figma",
+          style: { color: "#F24E1E" },
+        },
+        {
+          skillName: "Adobe XD",
+          fontAwesomeClassname: "simple-icons:adobexd",
+          style: { color: "#FF2BC2" },
+        },
+        {
+          skillName: "Bootstrap",
+          fontAwesomeClassname: "simple-icons:bootstrap",
+          style: { color: "#7952B3" },
+        },
+        {
+          skillName: "Ant Design",
+          fontAwesomeClassname: "simple-icons:antdesign",
+          style: { color: "#0170FE" },
+        },
+        {
+          skillName: "UIKit",
+          fontAwesomeClassname: "simple-icons:uikit",
+          style: { color: "#0058A3" },
+        },
+        {
+          skillName: "Sketch",
+          fontAwesomeClassname: "simple-icons:sketch",
+          style: { color: "#F7B500" },
+        },
+        {
+          skillName: "InVision",
+          fontAwesomeClassname: "simple-icons:invision",
+          style: { color: "#FF5B5B" },
+        },
+        {
+          skillName: "Zeplin",
+          fontAwesomeClassname: "simple-icons:zeplin",
+          style: { color: "#00B0A0" },
+        },
+        {
+          skillName: "Marvel App",
+          fontAwesomeClassname: "simple-icons:marvel",
+          style: { color: "#F3A4A3" },
+        },
+        {
+          skillName: "Balsamiq",
+          fontAwesomeClassname: "simple-icons:balsamiq",
+          style: { color: "#E7A400" },
+        },
+      ],
+    },
   ],
 };
 
@@ -470,7 +468,7 @@ const certifications = {
       certificate_link:
         "https://drive.google.com/file/d/1gIbrOeJqTfy_FyqbGnaWnffT_eQgujgA/view?usp=sharing",
       alt_name: "Stanford University",
-      color_code: "#FFFFFF"
+      color_code: "#FFFFFF",
     },
     {
       title: "Rising Star Award",
@@ -637,7 +635,7 @@ const experience = {
         },
       ],
     },
-  ],  
+  ],
 };
 
 // Projects Page
@@ -680,7 +678,7 @@ const publications = {
   ],
 };
 
-const MediumArticles = ({theme}) => {
+const MediumArticles = ({ theme }) => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -696,7 +694,7 @@ const MediumArticles = ({theme}) => {
             id: item.guid,
             name: item.title,
             createdAt: item.pubDate,
-            description: item.description.replace(/<[^>]+>/g, ''),
+            description: item.description.replace(/<[^>]+>/g, ""),
             url: item.link,
           }));
 
@@ -711,31 +709,38 @@ const MediumArticles = ({theme}) => {
   }, []);
 
   return (
-<div style={{ ...styles.container, backgroundColor: theme }}>
-<div style={{...styles.contentWrapper,  backgroundColor: theme}}>
-      <h2 style={styles.heading}>📝 My Medium Articles</h2>
-      {articles.length === 0 ? (
-        <p>Loading articles...</p>
-      ) : (
-        <ul style={styles.list}>
-          {articles.map((article) => (
-            <li key={article.id} style={{...styles.card, backgroundColor: theme.highlight}}>
-              <a
-                href={article.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={styles.link}
+    <div style={{ ...styles.container, backgroundColor: theme }}>
+      <div style={{ ...styles.contentWrapper, backgroundColor: theme }}>
+        <h2 style={styles.heading}>📝 My Medium Articles</h2>
+        {articles.length === 0 ? (
+          <p>Loading articles...</p>
+        ) : (
+          <ul style={styles.list}>
+            {articles.map((article) => (
+              <li
+                key={article.id}
+                style={{ ...styles.card, backgroundColor: theme.highlight }}
               >
-                <h3 style={styles.title}>{article.name}</h3>
-                <p style={styles.description}>{article.description.substring(0, 100)}...</p>
-                <small style={styles.date}>Published on: {new Date(article.createdAt).toDateString()}</small>
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={styles.link}
+                >
+                  <h3 style={styles.title}>{article.name}</h3>
+                  <p style={styles.description}>
+                    {article.description.substring(0, 100)}...
+                  </p>
+                  <small style={styles.date}>
+                    Published on: {new Date(article.createdAt).toDateString()}
+                  </small>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
-  </div>
   );
 };
 
@@ -841,5 +846,5 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
-  MediumArticles
+  MediumArticles,
 };

@@ -1,5 +1,4 @@
-/* header */
-
+/* Header styles */
 .header {
   display: block;
   max-width: 90%;
@@ -12,24 +11,26 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  /* background-color: #fff; */
-}
-.grey-color {
-  color: #868e96;
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
-  /* color: black; */
   text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Hover effect */
 .header li a:hover,
 .header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
+  background-color: #a6e1fa;
+  color: #000;
+  transform: scale(1.05);
 }
 
+/* Logo */
 .header .logo {
   display: block;
   float: left;
@@ -42,11 +43,9 @@
   font-family: "Agustina Regular";
   font-weight: bold;
   padding: 0 10px;
-  /* color: #55198b; */
 }
 
-/* menu */
-
+/* Menu */
 .menu {
   font-family: "Google Sans Regular";
 }
@@ -57,8 +56,7 @@
   transition: max-height 0.2s ease-out;
 }
 
-/* menu icon */
-
+/* Mobile Menu Icon */
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -96,8 +94,7 @@
   top: -5px;
 }
 
-/* menu btn */
-
+/* Mobile Menu Checkbox */
 .header .menu-btn {
   display: none;
 }
@@ -123,8 +120,7 @@
   top: 0;
 }
 
-/* 48em = 768px */
-
+/* Responsive */
 @media (min-width: 48em) {
   .header li {
     float: left;
@@ -146,3 +142,46 @@
     font-size: 12px;
   }
 }
+
+/* 🔥 Unique Active Link Styling 🔥 */
+.active-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #217199 10%, #72abe8 90%) !important;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* 🔥 Stylish Animated Bottom Border 🔥 */
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
+  transform: translateX(-50%);
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+/* 🔥 Scale Effect on Active 🔥 */
+.active-link:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* 🔥 Optional Arrow Indicator (Can Remove if Not Needed) 🔥 */
+/* .active-link::before {
+  content: "✔";
+  position: absolute;
+  left: -20px;
+  color: #ff758c;
+  font-size: 14px;
+  font-weight: bold;
+} */

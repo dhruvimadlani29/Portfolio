@@ -1,52 +1,52 @@
-.education-main {
+.experience-main {
   width: 100%;
 }
 
-.basic-education {
+.basic-experience {
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.heading-div {
+.experience-heading-div {
   display: flex;
 }
 
-.heading-div > * {
+.experience-heading-div > * {
   flex: 1;
 }
 
-.heading-img-div {
+.experience-heading-img-div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.heading-text-div {
+.experience-heading-text-div {
   text-align: center;
 }
 
-.heading-img-div > * {
+.experience-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }
 
-.heading-text {
+.experience-heading-text {
   font-size: 56px;
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
-.heading-sub-text {
+.experience-heading-sub-text {
   font-size: 30px;
   font-family: "Google Sans Regular";
   text-align: center;
   margin-bottom: 10px;
 }
 
-.header-detail-text {
+.experience-header-detail-text {
   font-size: 20px;
   line-height: 30px;
   margin-top: 0px;
@@ -56,30 +56,30 @@
 }
 
 @media (max-width: 1380px) {
-  .heading-text {
+  .experience-heading-text {
     font-size: 50px;
     margin-top: 80px;
   }
-  .heading-sub-text {
+  .experience-heading-sub-text {
     font-size: 25px;
   }
 }
 
 @media (max-width: 768px) {
-  .heading-text {
+  .experience-heading-text {
     font-size: 30px;
     margin-top: 20px;
   }
 
-  .heading-sub-text {
+  .experience-heading-sub-text {
     font-size: 20px;
   }
 
-  .heading-div {
+  .experience-heading-div {
     flex-direction: column;
   }
 
-  .header-detail-text {
+  .experience-header-detail-text {
     font-size: 16px;
     margin-right: 0px;
     line-height: normal;

@@ -8,10 +8,9 @@ import { Link } from "react-router-dom";
 
 export default class Error extends Component {
   render() {
-    const {theme} = this.props.theme;
+    const { theme } = this.props.theme;
     return (
       <div className="error-main">
-        {/* <Header theme={this.props.theme} /> */}
         <div className="error-class">
           <Fade bottom duration={2000} distance="40px">
             <h1>Woops</h1>

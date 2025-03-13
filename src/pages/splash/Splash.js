@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./Splash.css";
-import { useNavigate } from "react-router-dom";  // Import useNavigate hook
+import { useHistory } from "react-router-dom"; // ✅ Correct import
 import LoaderLogo from "../../components/Loader/LoaderLogo.js";
+import { blueTheme, materialDarkTheme } from "../../theme.js";
 
-function AnimatedSplash(props) {
+function AnimatedSplash() {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") === "dark" ? materialDarkTheme : blueTheme
+  );
+
   return (
     <div className="logo_wrapper">
-      <div className="screen" style={{ backgroundColor: props.theme.splashBg }}>
-        <LoaderLogo id="logo" theme={props.theme} />
+      <div className="screen" style={{ backgroundColor: theme.splashBg }}>
+        <LoaderLogo id="logo" theme={theme} />
       </div>
     </div>
   );
@@ -15,21 +20,21 @@ function AnimatedSplash(props) {
 
 function Splash(props) {
   const [redirect, setRedirect] = useState(false);
-  const navigate = useNavigate();  // Get navigate function from useNavigate
+  const history = useHistory(); // ✅ Correct: Get history object
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setRedirect(true);
     }, 5500);
 
-    return () => clearTimeout(timer);  // Cleanup the timer on component unmount
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
 
   useEffect(() => {
     if (redirect) {
-      navigate("/home");  // Navigate to '/home' when redirect state is true
+      history.push("/home");
     }
-  }, [redirect, navigate]);
+  }, [redirect, history]);
 
   return redirect ? null : <AnimatedSplash theme={props.theme} />;
 }
