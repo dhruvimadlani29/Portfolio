@@ -31,7 +31,7 @@ const Experience = () => {
               <ExperienceImg theme={theme} />
               <img
                 src={require("../../assets/images/experienceImage.webp")}
-                alt=""
+                alt="Experience"
               />
             </div>
             <div className="experience-heading-text-div">

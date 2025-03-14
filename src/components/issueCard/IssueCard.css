@@ -23,7 +23,7 @@
   margin-top: 0px;
   display: inline-block;
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Google Sans Regular";
   padding: 2px;
   color: #fff;
@@ -35,7 +35,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 10px;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Google Sans Regular";
 }
 
@@ -46,7 +46,7 @@
 }
 
 .issue-icons {
-  font-size: 18px;
+  font-size: 22px;
   width: 5%;
   float: left;
   text-align: left;
@@ -73,7 +73,7 @@
   text-align: left;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 16px;
+  font-size: 22px;
   font-family: "Google Sans Regular";
 }
 
@@ -128,7 +128,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: "Google Sans Regular";
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 5px;
 }
 
@@ -147,7 +147,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   color: #28a745;
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Google Sans Regular";
 }
 
@@ -156,7 +156,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   color: #d73a49;
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Google Sans Regular";
 }
 
@@ -232,7 +232,7 @@
     font-size: 15px;
   }
   .pr-subtitile {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 3px;
   }
 

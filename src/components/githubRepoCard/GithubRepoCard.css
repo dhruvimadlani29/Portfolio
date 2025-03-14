@@ -104,11 +104,11 @@
   }
 
   .repo-name {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .repo-description {
-    font-size: 14px;
+    font-size: 22px;
   }
 
   .repo-details {
@@ -116,6 +116,6 @@
   }
 
   .repo-creation-date {
-    font-size: 14px;
+    font-size: 22px;
   }
 }

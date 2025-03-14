@@ -63,11 +63,11 @@
   }
 
   .publication-name {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .publication-description {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .publication-details {
@@ -75,6 +75,6 @@
   }
 
   .publication-creation-date {
-    font-size: 14px;
+    font-size: 20px;
   }
 }

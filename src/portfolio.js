@@ -575,7 +575,7 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work and Internship",
   description:
     "I have worked with startups and established companies, focusing on building scalable and responsive web applications. My expertise includes React.js, Redux, TypeScript, and Node.js, along with cloud platforms like AWS and Azure. I specialize in UI/UX development, performance optimization, backend services, and cloud infrastructure. Additionally, I have experience mentoring interns and collaborating with cross-functional teams to deliver high-quality software solutions. I am passionate about developing efficient, user-friendly applications and continuously enhancing my technical skills.",
   header_image_path: "experience.svg",
@@ -790,12 +790,12 @@ const styles = {
     color: "#1f3a93",
   },
   description: {
-    fontSize: "14px",
+    fontSize: "20px",
     color: "#555",
     marginBottom: "10px",
   },
   date: {
-    fontSize: "12px",
+    fontSize: "16px",
     color: "#888",
   },
 };

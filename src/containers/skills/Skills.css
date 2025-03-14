@@ -11,7 +11,7 @@
 }
 
 .skills-text {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .skills-text-div {
@@ -58,7 +58,7 @@
     font-size: 30px;
   }
   .greeting-text-p {
-    font-size: 16px;
+    font-size: 22px;
     line-height: normal;
   }
   .skills-main-div {
@@ -69,10 +69,10 @@
     margin: 20px;
   }
   .skills-text {
-    font-size: 16px;
+    font-size: 21px;
   }
   .skills-text-subtitle {
-    font-size: 16px;
+    font-size: 21px;
     text-align: center;
   }
   .skills-image-div {

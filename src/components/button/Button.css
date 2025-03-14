@@ -14,7 +14,7 @@
   font-family: "Google Sans Regular";
   display: block;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
   letter-spacing: 2px;
 }
@@ -38,6 +38,6 @@
 }
 @media (max-width: 320px) {
   .main-button {
-    font-size: 12px;
+    font-size: 16px;
   }
 }

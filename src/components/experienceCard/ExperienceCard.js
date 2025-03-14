@@ -59,6 +59,8 @@ class ExperienceCard extends Component {
                   display: "flex",
                   flexDirection: "row",
                   justifyContent: "space-between",
+                  fontSize: "18px",
+                  fontFamily: "Google Sans Medium",
                 }}
               >
                 <div>
@@ -103,6 +105,7 @@ class ExperienceCard extends Component {
                   display: "flex",
                   justifyContent: "flex-start",
                   marginTop: 20,
+                  fontSize: "20px",
                 }}
               >
                 <div className="repo-description" />

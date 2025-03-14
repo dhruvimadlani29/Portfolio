@@ -13,7 +13,7 @@
 
 .card-subtitle {
   font-family: "Google Sans Medium";
-  font-size: 18px;
+  font-size: 22px;
   /* color: #000000; */
   margin-top: 7px;
   margin-bottom: 5px;
@@ -49,7 +49,7 @@
 }
 .duration {
   font-family: "Google Sans Regular";
-  font-size: 16px;
+  font-size: 22px;
   /* color: #212121; */
   padding-right: 10px;
   float: right;
@@ -139,10 +139,10 @@
   }
 
   .card-title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .card-subtitle {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
