@@ -4,8 +4,6 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import BlogsImg from "./BlogsImg";
-import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
@@ -21,12 +19,54 @@ const Contact = () => {
     localStorage.getItem("theme") === "dark" ? materialDarkTheme : blueTheme
   );
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
   useEffect(() => {
     localStorage.setItem(
       "theme",
       theme === materialDarkTheme ? "dark" : "light"
     );
   }, [theme]);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault(); // Prevent form submission
+
+    const { name, email, subject, message } = formData;
+
+    // Ensure all fields are filled out
+    if (!name || !email || !subject || !message) {
+      alert("All fields are required.");
+      return; // Stop execution if any field is missing
+    }
+
+    // Prepare the WhatsApp message
+    const whatsappMessage = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`;
+
+    // Encode the message
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+
+    // Replace with your phone number
+    const phoneNumber = "6135324949"; // Include the country code (e.g., +1234567890)
+
+    // Construct the WhatsApp link
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Open WhatsApp with the pre-filled message
+    window.open(whatsappLink, "_blank");
+  };
 
   return (
     <div className="contact-main">
@@ -66,8 +106,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* <hr className="contact-divider" /> */}
-
               <h1
                 className="address-heading-text"
                 style={{ color: theme.text, marginTop: "60px" }}
@@ -104,6 +142,53 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+          {/* Contact Form Section */}
+          {/* <div className="contact-form">
+            <h2 className="contact-form-heading" style={{ color: theme.text }}>
+              Contact Me
+            </h2>
+            <form className="contact-form-container" onSubmit={handleFormSubmit}>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                placeholder="Your Name"
+                className="contact-form-input"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Your Email"
+                className="contact-form-input"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleInputChange}
+                placeholder="Subject"
+                className="contact-form-input"
+                required
+              />
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                placeholder="Your Message"
+                className="contact-form-textarea"
+                required
+              />
+              <button type="submit" className="contact-form-button">
+                Send Message
+              </button>
+            </form>
+          </div> */}
         </Fade>
       </div>
       <Footer theme={theme} />

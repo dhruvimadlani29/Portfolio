@@ -12,17 +12,15 @@ import {
 function SeoHeader() {
   let sameAs = [];
   socialMediaLinks
-    .filter(
-      (media) =>
-        !(media.link.startsWith("tel") || media.link.startsWith("mailto"))
-    )
+    .filter((media) => !media.link.startsWith("tel")) // Removed mailto filter
     .forEach((media) => {
       sameAs.push(media.link);
     });
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
+  let mail =
+    socialMediaLinks
+      .find((media) => media.link.startsWith("mailto"))
+      ?.link?.substring("mailto:".length) || "";
   let job = experience.sections
     ?.find((section) => section.work)
     ?.experiences?.at(0);
@@ -37,6 +35,7 @@ function SeoHeader() {
       description: certification.subtitle,
     });
   });
+
   const data = {
     "@context": "https://schema.org/",
     "@type": "Person",
@@ -60,6 +59,7 @@ function SeoHeader() {
     },
     hasCredential: credentials,
   };
+
   return (
     <Helmet>
       <title>{seo.title}</title>

@@ -60,12 +60,12 @@ const socialMediaLinks = [
   //   fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
   //   backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
   // },
-  {
-    name: "Gmail",
-    link: "mailto:dhruvimadlani2902@gmail.com",
-    fontAwesomeIcon: "fab fa-google", // OR "fas fa-envelope"
-    backgroundColor: "#D14836",
-  },
+  // {
+  //   name: "Gmail",
+  //   link: "mailto:dhruvimadlani2902@gmail.com",
+  //   fontAwesomeIcon: "fab fa-google", // OR "fas fa-envelope"
+  //   backgroundColor: "#D14836",
+  // },
 
   {
     name: "X-Twitter",

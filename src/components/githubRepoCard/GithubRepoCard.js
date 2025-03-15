@@ -8,12 +8,12 @@ export default function GithubRepoCard({ repo, theme }) {
     var win = window.open(url, "_blank");
     win.focus();
   }
-console.log("repo.description",repo.description);
+  console.log("repo.description", repo.description);
 
   return (
     <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
       <Fade bottom duration={2000} distance="40px">
-        <div key={repo.id} onClick={() => openRepoinNewTab(repo.url)} className="repo-content">
+        <div key={repo.id} className="repo-content">
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
@@ -33,7 +33,7 @@ console.log("repo.description",repo.description);
             </p>
           </div>
           <p className="repo-description" style={{ color: theme.text }}>
-           {"A web-based scheduling platform for real estate transactions, connecting customers, agents, and vendors."}
+            {repo.description}
           </p>
           <div className="repo-details">
             <p
