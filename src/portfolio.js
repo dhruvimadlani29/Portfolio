@@ -711,7 +711,12 @@ const MediumArticles = ({ theme }) => {
   return (
     <div style={{ ...styles.container, backgroundColor: theme }}>
       <div style={{ ...styles.contentWrapper, backgroundColor: theme }}>
-        <h2 style={styles.heading}>📝 My Medium Articles</h2>
+        <h2 style={styles.heading}>
+          <span role="img" aria-label="notepad">
+            📝
+          </span>{" "}
+          My Medium Articles
+        </h2>
         {articles.length === 0 ? (
           <p>Loading articles...</p>
         ) : (

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -10,21 +9,20 @@ import { greeting, contactPageData } from "../../portfolio.js";
 import { blueTheme, materialDarkTheme } from "../../theme.js"; // Import themes
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
 const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
 
 const Contact = () => {
-  const [theme, setTheme] = useState(
+  const [theme] = useState(
     localStorage.getItem("theme") === "dark" ? materialDarkTheme : blueTheme
   );
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
 
   useEffect(() => {
     localStorage.setItem(
@@ -33,40 +31,40 @@ const Contact = () => {
     );
   }, [theme]);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault(); // Prevent form submission
+  // const handleFormSubmit = (e) => {
+  //   e.preventDefault(); // Prevent form submission
 
-    const { name, email, subject, message } = formData;
+  //   const { name, email, subject, message } = formData;
 
-    // Ensure all fields are filled out
-    if (!name || !email || !subject || !message) {
-      alert("All fields are required.");
-      return; // Stop execution if any field is missing
-    }
+  //   // Ensure all fields are filled out
+  //   if (!name || !email || !subject || !message) {
+  //     alert("All fields are required.");
+  //     return; // Stop execution if any field is missing
+  //   }
 
-    // Prepare the WhatsApp message
-    const whatsappMessage = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`;
+  //   // Prepare the WhatsApp message
+  //   const whatsappMessage = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`;
 
-    // Encode the message
-    const encodedMessage = encodeURIComponent(whatsappMessage);
+  //   // Encode the message
+  //   const encodedMessage = encodeURIComponent(whatsappMessage);
 
-    // Replace with your phone number
-    const phoneNumber = "6135324949"; // Include the country code (e.g., +1234567890)
+  //   // Replace with your phone number
+  //   const phoneNumber = "6135324949"; // Include the country code (e.g., +1234567890)
 
-    // Construct the WhatsApp link
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  //   // Construct the WhatsApp link
+  //   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-    // Open WhatsApp with the pre-filled message
-    window.open(whatsappLink, "_blank");
-  };
+  //   // Open WhatsApp with the pre-filled message
+  //   window.open(whatsappLink, "_blank");
+  // };
 
   return (
     <div className="contact-main">

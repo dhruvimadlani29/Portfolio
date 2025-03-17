@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./LoaderLogo.css";
-import { ThemeContext } from "../../context/ThemeContext";
 
 const LogoLoader = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-
   return (
     <div className="flex justify-center items-center h-screen bg-black">
       <svg

@@ -3,7 +3,7 @@ import "./TopButton.css";
 import { blueTheme, materialDarkTheme } from "../../theme";
 
 export default function TopButton() {
-  const [theme, setTheme] = useState(
+  const [theme] = useState(
     localStorage.getItem("theme") === "dark" ? materialDarkTheme : blueTheme
   );
 

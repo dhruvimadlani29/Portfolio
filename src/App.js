@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, Redirect } from "react-router-dom"; // Keep only Switch and Route
 import "./App.css";
-import Main from "./containers/Main";
+// import Main from "./containers/Main";
 import { ThemeProvider } from "styled-components";
 import { blueTheme, materialDarkTheme } from "./theme";
 import Header from "./components/header/Header";

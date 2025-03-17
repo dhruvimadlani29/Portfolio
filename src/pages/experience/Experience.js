@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
@@ -10,7 +9,7 @@ import ExperienceImg from "./ExperienceImg";
 import { blueTheme, materialDarkTheme } from "../../theme.js";
 
 const Experience = () => {
-  const [theme, setTheme] = useState(
+  const [theme] = useState(
     localStorage.getItem("theme") === "dark" ? materialDarkTheme : blueTheme
   );
 

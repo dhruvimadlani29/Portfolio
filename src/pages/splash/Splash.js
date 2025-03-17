@@ -5,7 +5,7 @@ import LoaderLogo from "../../components/Loader/LoaderLogo.js";
 import { blueTheme, materialDarkTheme } from "../../theme.js";
 
 function AnimatedSplash() {
-  const [theme, setTheme] = useState(
+  const [theme] = useState(
     localStorage.getItem("theme") === "dark" ? materialDarkTheme : blueTheme
   );
 

@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import Educations from "../../containers/education/Educations";
-import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
 import "./EducationComponent.css";
-
-import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import EducationImg from "./EducationImg";
 import { blueTheme, materialDarkTheme } from "../../theme.js";
 
 const Experience = () => {
-  const [theme, setTheme] = useState(
+  const [theme] = useState(
     localStorage.getItem("theme") === "dark" ? materialDarkTheme : blueTheme
   );
 
