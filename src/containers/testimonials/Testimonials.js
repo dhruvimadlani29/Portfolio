@@ -29,7 +29,7 @@ export default function Testimonials({ theme }) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 5000); // Change testimonial every 5 seconds
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, [testimonials.length]);
