@@ -70,7 +70,7 @@ const Header = () => {
             </li>
           ))}
 
-          {/* Dark/Light Mode Toggle */}
+          {/* Dark/Light Mode Toggle
           <li className="theme-toggle">
             <button
               onClick={toggleTheme}
@@ -86,7 +86,7 @@ const Header = () => {
             >
               {theme === materialDarkTheme ? "☀️ Light Mode" : "🌙 Dark Mode"}
             </button>
-          </li>
+          </li> */}
         </ul>
       </header>
     </Fade>
