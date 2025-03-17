@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
 import { ThemeContext } from "../../context/ThemeContext";
-import { materialDarkTheme } from "../../theme.js";
+// import { materialDarkTheme } from "../../theme.js";
 
 const onMouseEnter = (event, color) => {
   event.target.style.backgroundColor = color;
@@ -16,7 +16,7 @@ const onMouseOut = (event) => {
 };
 
 const Header = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const link = settings.isSplash ? "/splash" : "/";
 
   const closeMenu = () => {
